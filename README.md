@@ -88,6 +88,8 @@ The below tables help us visualize the misclassifications made by the model on t
 
 Our model successfully predicts the identity and expression of a subject with high accuracy. In the future we plan on Improving our dataset by capturing images of more expressions such as fear, disgust, contempt etc. Also enabling our model to categorize unidentified subjects to an ‘unknown’ class. This can also be extended to learning the body language of subjects which can give a better understanding of a crowd’s behaviour.
 
+<video src="dl_video.mp4" width="320" height="200" controls preload></video>
+
 ## References
 
 * CPU Real Time face detection - Towards Data Science (https://towardsdatascience.com/faced-cpu-real-time-face-detection-using-deep-learning-1488681c1602)
