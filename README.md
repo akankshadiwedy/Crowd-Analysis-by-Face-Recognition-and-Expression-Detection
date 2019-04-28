@@ -88,7 +88,9 @@ The below tables help us visualize the misclassifications made by the model on t
 
 Our model successfully predicts the identity and expression of a subject with high accuracy. In the future we plan on Improving our dataset by capturing images of more expressions such as fear, disgust, contempt etc. Also enabling our model to categorize unidentified subjects to an ‘unknown’ class. This can also be extended to learning the body language of subjects which can give a better understanding of a crowd’s behaviour.
 
-<video src="dl_video.mp4" width="320" height="200" controls preload></video>
+<p align="center">
+    <img src="Images/dl_exp.gif" height="400"/>
+</p>
 
 ## References
 
