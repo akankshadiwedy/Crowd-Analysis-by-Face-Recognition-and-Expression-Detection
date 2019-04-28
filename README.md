@@ -8,9 +8,6 @@ Contextual emotion has widespread consequences for society and business. Busines
 ## Previous Works and Comparison
 The most traditional and extensively used algorithms in the research of face recognition and emotion detection are PCA, SVM and Linear Discriminant Analysis (LDA). 
 
-<p align="center">
-    <img src="figure/.png" height="72"/>
-</p>
 
 In recent decades, deep-learning algorithms have been applied to the field of computer vision, including CNN and recurrent neural network (RNN). 
 Most approaches deal with each task independently, however there are no successful models that predict both identity and expression of a person simultaneously with  high accuracy.
@@ -21,20 +18,20 @@ We aim to successfully design a Multi-Label Convolutional Neural Network which p
 * Recognize the identity of the person 
 
 <p align="center">
-    <img src="figure/.png" height="72"/>
+    <img src="Images/disney.png" height="72"/>
 </p>
 
 The applications of the proposed approach ranges from analyzing class reactions to understanding customer satisfaction. For example, Disney recently used expression analysis to better understand audience reactions for movies like Star Wars: The Force Awakens and the jungle book. Even Facebook began implementing facial recognition functionality that helped identify people whose faces may be featured in the photos. Now, more than 350 million photos are uploaded and tagged using face recognition each day. 
 
 ## Data and Data Preprocessing
 <p align="center">
-    <img src="figure/.png" height="72"/>
+    <img src="Images/Collage.jpg" height="72"/>
 </p>
 
 One of the biggest challenges for our project was building a good dataset over which we could draw conclusions. We curated our own dataset of over 5000 images captured in different lighting conditions and orientations encompassing 5 subjects and 5 universal expressions. With the end goal of performing analysis on a real-time feed, we built out training dataset by capturing images from a webcam. Face detection was used to identify the individuals in the frame and the subjects face was resized to a color resolution of 48x48. The image was then normalized. To increase the learning of our model and avoid over-fitting, we used data augmentation to increase the number of training examples using operations like horizontal flip, rotation and zooming. One-hot encoding was used to transform labels to vectors.
 
 <p align="center">
-    <img src="figure/.png" height="72"/>
+    <img src="Images/pre_process.png" height="72"/>
 </p>
 
 ## Approach
@@ -42,32 +39,32 @@ As Face Recognition and Expression Detection involve learning some common featur
 
 We used Softmax with Categorical Cross entropy as our loss function because its proven to work well with Multi-Label classification. Using this loss, we train a CNN to output a probability over five expressions in addition to the subjects identity.
 <p align="center">
-    <img src="figure/.png" height="72"/>
+    <img src="Images/model.png" height="72"/>
 </p>
 
 For the training dataset, we achieved a Face prediction accuracy of 99.93%.
 
 <p align="center">
-    <img src="figure/.png" height="72"/>
+    <img src="Images/Face_accuracy.png" height="72"/>
 </p>
 
 For the training dataset, we achieved an Expression prediction accuracy of 99.93%.
 
 <p align="center">
-    <img src="figure/.png" height="72"/>
+    <img src="Images/Expression_accuracy.png" height="72"/>
 </p>
 
 ## Results
 The model performed well on test data achieving an accuracy of 94% for face prediction and 89% for expression prediction. The shared model approach achieved the following accuracy for training, validation and test datasets. 
 <p align="center">
-    <img src="figure/.png" height="72"/>
+    <img src="Images/Test_Accuracy.png" height="72"/>
 </p>
 
 The performance of the test data was evaluated using Precision, Recall and F1-score. Our observations can be summarized as below.
 
 <p align="center">
-    <img src="figure/.png" height="72"/>
-    <img src="figure/.png" height="72"/>
+    <img src="Images/Face_test_accuracy.png" height="72"/>
+    <img src="Images/Exp_test_accuracy.png" height="72"/>
 </p>
 
 We had the following observations with our model :
@@ -81,8 +78,8 @@ We had the following observations with our model :
 
 The below tables help us visualize the misclassifications made by the model on test data. 
 <p align="center">
-    <img src="figure/.png" height="72"/>
-    <img src="figure/.png" height="72"/>
+    <img src="Images/cm_face.png" height="72"/>
+    <img src="Images/cm_exp.png" height="72"/>
 </p>
 
 Our model successfully predicts the identity and expression of a subject with high accuracy. In the future we plan on Improving our dataset by capturing images of more expressions such as fear, disgust, contempt etc. Also enabling our model to categorize unidentified subjects to an ‘unknown’ class. This can also be extended to learning the body language of subjects which can give a better understanding of a crowd’s behaviour.
