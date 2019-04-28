@@ -52,7 +52,7 @@ For the training dataset, we achieved a Face prediction accuracy of 99.93%.
     <img src="Images/Face_accuracy.png" height="200"/>
 </p>
 
-For the training dataset, we achieved an Expression prediction accuracy of 99.93%.
+For the training dataset, we achieved an Expression prediction accuracy of 99.54%.
 
 <p align="center">
     <img src="Images/Expression_accuracy.png" height="200"/>
