@@ -1,7 +1,7 @@
 # Crowd-Analysis-by-Face-Recognition-and-Expression-Detection
 
 
-**Authors : Akanksha Diwedy, Akarsh Dang, Anthony Prajwal, Harsh Waghela, Naren Divvala**
+**Authors : Akanksha Diwedy, Akarsh Dang, Anthony Prajwal Prakash, Harsh Waghela, Naren Divvala**
 
 Research has shown that over 90% of our communication can be non-verbal, but technology has struggled to keep up, and traditional code is generally bad at understanding our intonations and intentions. 
 Contextual emotion has widespread consequences for society and business. Businesses can use the model to understand their customers and create products that people like. In the public sphere, government organizations could make good use of the ability to detect emotions like guilt, fear, and uncertainty. Face identification and Expression recognition have been explored independently. Our project presents a hybrid model of face recognition and expression detection for analyzing crowd behaviour. Many theoretical models discussed this possibility and its effects on the accuracy of the classification, but they were not backed by practical or experimental figures. We saw a challenge in this scenario which was aligned with our interest in Computer Vision, helping us explore multiple capabilities and understand the true power of CNN’s.
